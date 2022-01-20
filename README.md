@@ -1,5 +1,3 @@
-----Sinyi 範本----
-
 # 啟動專案指令
 
 ---
@@ -18,6 +16,8 @@
 - npm run build:prod
 - npm run start:prod
 
+<br/>
+
 # 環境變數設定檔
 
 ---
@@ -26,12 +26,16 @@
 - .env.pre_production 測試機環境
 - .env.production 正式機環境
 
+<br/>
+
 # 如何語法檢查
 
 ---
 
 - 自動檢查: 使用 git commit 時，會針對該次提交檔案進行檢查 (備: 有些 Vscode 內建的 commit 會有異常，建議用 CMD 指令)
 - 手動檢查: 若提交前想進行全部原始碼檢查可以用 npm run build:pre-prod ，Nextjs 預設會進行檢查
+
+<br/>
 
 # 語法規範 : Eslint + husky + lint-staged( pre-commit )
 
@@ -41,6 +45,8 @@
 - .prettierrc.json 定義 Prettier 規則
 - lint-staged.config.js 定義要執行的檢查指令與檔案，在 commit 時會自動觸發
 - .husky/pre-commit 定義 git commit 時，的指令
+
+<br/>
 
 # 速度優化建議: 圖片 + 字型載入 + CSS 載入 + Js
 
@@ -63,6 +69,8 @@
 ## Js
 
 - 區分共用的可抽成 hook or function
+
+<br/>
 
 # 資料載入建議
 
@@ -88,3 +96,13 @@
 
 - useEffect + axios
 - useSwr + axios ( 含快取機制，不會每次 pages render 都重複打 api )
+
+<br/>
+
+# VsCode 基本輔助套件
+
+---
+
+- Eslint: 開發過程以紅底線標示未遵照語法規範的區域
+- Prettier: 可以設置每次存檔時自動排版
+- Git Graph: VsCode 中夠直接看到 git 分支圖
