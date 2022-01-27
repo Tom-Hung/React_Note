@@ -1,0 +1,6 @@
+// Next.js now uses Rust-based compiler SWC to compile JavaScript/TypeScript
+// SWC requires a binary be downloaded that is compatible specific to your system
+// * 不符合最新的 SWC 編譯器需求，使用回 Next.js 12 以前的 Babel 即可
+{
+    "presets": ["next/babel"]
+  }

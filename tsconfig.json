@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Patterns/ref/index.jsx", "src/hooks/useDebounce.js"],
   "exclude": ["node_modules"]
 }
